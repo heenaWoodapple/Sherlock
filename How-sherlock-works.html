@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/StyleSheet.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>How Sherlock works</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="row align-items-center">
+                <div class="col-lg-6 col-4">
+                    <h1 class="logo align-items-center d-flex">
+                        <a href="/">
+                            <svg id="Logo_-_wordmark" data-name="Logo - wordmark" xmlns="http://www.w3.org/2000/svg" width="138.172" height="24.778" viewBox="0 0 138.172 24.778">
+                                <g id="Group_14508" data-name="Group 14508" transform="translate(-301.15 -25.375)">
+                                    <text id="_" data-name="™" transform="translate(430.322 36.375)" fill="currentcolor" font-size="10" font-family="NotoSerif, Noto Serif"><tspan x="0" y="0">™</tspan></text>
+                                    <path id="Path_203423" data-name="Path 203423" d="M389.719-1068.06a3.336,3.336,0,0,0,1.6.275,12.7,12.7,0,0,0,1.7-.358,2.787,2.787,0,0,1,1.713.066,2.054,2.054,0,0,0-1.088.477,6.691,6.691,0,0,1-.982.7,2.74,2.74,0,0,1-2.4-.1" transform="translate(0 1100.688)" fill="currentcolor" fill-rule="evenodd" />
+                                    <path id="Path_203424" data-name="Path 203424" d="M384.8-1068.06a3.34,3.34,0,0,1-1.6.275,12.685,12.685,0,0,1-1.7-.358,2.784,2.784,0,0,0-1.712.066,2.061,2.061,0,0,1,1.088.477,6.627,6.627,0,0,0,.981.7,2.74,2.74,0,0,0,2.4-.1" transform="translate(0 1100.688)" fill="currentcolor" fill-rule="evenodd" />
+                                    <path id="Path_203425" data-name="Path 203425" d="M307.533-1050.534a7.694,7.694,0,0,1-4.764-1.251,3.94,3.94,0,0,1-1.619-3.272,2.075,2.075,0,0,1,.609-1.556,2.335,2.335,0,0,1,1.7-.593,7.913,7.913,0,0,0,.513,2.5,4.276,4.276,0,0,0,1.379,1.876,3.861,3.861,0,0,0,2.438.722,5.015,5.015,0,0,0,3.368-1.043,3.728,3.728,0,0,0,1.219-3,4,4,0,0,0-.465-2.005,4.659,4.659,0,0,0-1.54-1.523,17.62,17.62,0,0,0-2.967-1.476,12.036,12.036,0,0,1-4.443-2.839,6.153,6.153,0,0,1-1.459-4.282,5.3,5.3,0,0,1,.914-3.127,5.8,5.8,0,0,1,2.5-1.989,8.972,8.972,0,0,1,3.609-.69,7.7,7.7,0,0,1,4.426,1.09,3.074,3.074,0,0,1,1.572,2.5,1.839,1.839,0,0,1-.69,1.555,2.95,2.95,0,0,1-1.844.529,5.626,5.626,0,0,0-.336-1.924,3.375,3.375,0,0,0-1.123-1.54,3.4,3.4,0,0,0-2.134-.609,3.979,3.979,0,0,0-2.887.994,3.538,3.538,0,0,0-1.025,2.663,4.6,4.6,0,0,0,.464,2.165,4.274,4.274,0,0,0,1.556,1.572,19.886,19.886,0,0,0,2.951,1.459,13.93,13.93,0,0,1,4.395,2.662,5.262,5.262,0,0,1,1.571,3.977,5.729,5.729,0,0,1-2.133,4.748A8.98,8.98,0,0,1,307.533-1050.534Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    <path id="Path_203426" data-name="Path 203426" d="M317.316-1050.855v-1.347h.256a3.991,3.991,0,0,0,1.861-.4q.77-.4.769-1.908V-1071.7q0-1.412-.785-1.8a4.159,4.159,0,0,0-1.845-.384h-.256v-1.348h5.9v7.057q0,.578-.032,1.219t-.1,1.508h.16a4.9,4.9,0,0,1,4.716-2.92,5.641,5.641,0,0,1,4.218,1.492q1.459,1.491,1.46,4.795v7.571q0,1.508.689,1.908a3.514,3.514,0,0,0,1.78.4h.1v1.347h-5.581v-11.066a5.713,5.713,0,0,0-.786-3.24,3.078,3.078,0,0,0-2.742-1.155,3.284,3.284,0,0,0-2.935,1.412,6.7,6.7,0,0,0-.947,3.785v6.768q0,1.411.786,1.78a4.3,4.3,0,0,0,1.845.369h.1v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    <path id="Path_203427" data-name="Path 203427" d="M345.991-1050.534a6.809,6.809,0,0,1-5.469-2.309,9.679,9.679,0,0,1-1.973-6.48q0-4.491,1.845-6.768a6.4,6.4,0,0,1,5.277-2.278,6.336,6.336,0,0,1,4.891,1.925q1.78,1.924,1.78,5.742v1.475H341.661a8.773,8.773,0,0,0,1.266,5.085,4.138,4.138,0,0,0,3.513,1.587,5.488,5.488,0,0,0,2.838-.69,5.238,5.238,0,0,0,1.749-1.555,1,1,0,0,1,.417.385,1.245,1.245,0,0,1,.192.705,2.229,2.229,0,0,1-.609,1.379,4.762,4.762,0,0,1-1.877,1.268A8.227,8.227,0,0,1,345.991-1050.534Zm-4.266-10.425H349.1a9.223,9.223,0,0,0-.786-4.106,2.784,2.784,0,0,0-2.711-1.572,3.121,3.121,0,0,0-2.743,1.46A8.491,8.491,0,0,0,341.725-1060.959Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    <path id="Path_203428" data-name="Path 203428" d="M354.683-1050.855v-1.347h.1a3.994,3.994,0,0,0,1.861-.4q.77-.4.77-1.908v-10.008q0-1.411-.786-1.8a4.162,4.162,0,0,0-1.845-.385h-.1v-1.347h4.94l.61,3.176h.16a13.967,13.967,0,0,1,.9-1.748,3.73,3.73,0,0,1,1.283-1.267,4.3,4.3,0,0,1,2.213-.482,4.521,4.521,0,0,1,2.615.61,2.007,2.007,0,0,1,.85,1.733,2.137,2.137,0,0,1-.69,1.635,3.323,3.323,0,0,1-2.294.641,3.625,3.625,0,0,0-.384-1.908,1.448,1.448,0,0,0-1.316-.593,1.913,1.913,0,0,0-1.507.7,5.126,5.126,0,0,0-.963,1.8,13.182,13.182,0,0,0-.513,2.262,15.63,15.63,0,0,0-.16,2.1v5.036q0,1.411.786,1.78a4.293,4.293,0,0,0,1.844.369h.9v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    <path id="Path_203429" data-name="Path 203429" d="M368.829-1050.855v-1.347h.417a3.989,3.989,0,0,0,1.86-.4q.771-.4.77-1.908V-1071.7q0-1.412-.786-1.8a4.154,4.154,0,0,0-1.844-.384h-.417v-1.348h6.062v20.722q0,1.508.77,1.908a3.991,3.991,0,0,0,1.861.4h.417v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    <path id="Path_203430" data-name="Path 203430" d="M387.24-1050.534a6.96,6.96,0,0,1-5.453-2.213q-1.989-2.214-1.989-6.736,0-4.491,1.909-6.688a7.054,7.054,0,0,1,5.629-2.2,6.989,6.989,0,0,1,5.453,2.2q1.989,2.2,1.989,6.688,0,4.523-1.925,6.736A7.038,7.038,0,0,1,387.24-1050.534Zm.064-1.668a3.506,3.506,0,0,0,3.384-1.844,11.925,11.925,0,0,0,.979-5.437,11.444,11.444,0,0,0-.995-5.389,3.564,3.564,0,0,0-3.4-1.8,3.528,3.528,0,0,0-3.384,1.8,11.6,11.6,0,0,0-.978,5.389,11.756,11.756,0,0,0,.994,5.437A3.541,3.541,0,0,0,387.3-1052.2Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    <path id="Path_203431" data-name="Path 203431" d="M405.3-1050.534a7.744,7.744,0,0,1-3.785-.9,6.213,6.213,0,0,1-2.582-2.839,11.654,11.654,0,0,1-.946-5.084,12.7,12.7,0,0,1,.946-5.405,5.791,5.791,0,0,1,2.55-2.791,7.94,7.94,0,0,1,3.657-.818,9.927,9.927,0,0,1,2.63.353,5.25,5.25,0,0,1,2.117,1.091,2.344,2.344,0,0,1,.834,1.828,1.708,1.708,0,0,1-.722,1.556,3.971,3.971,0,0,1-2.133.465,5.613,5.613,0,0,0-.561-2.6,2.2,2.2,0,0,0-2.165-1.091,3.627,3.627,0,0,0-2.134.642,4.126,4.126,0,0,0-1.411,2.245,15.845,15.845,0,0,0-.5,4.491,9.144,9.144,0,0,0,1.139,5.084,4.147,4.147,0,0,0,3.7,1.684,5.23,5.23,0,0,0,2.615-.626,4.159,4.159,0,0,0,1.651-1.619,1.53,1.53,0,0,1,.546,1.25,2.2,2.2,0,0,1-.61,1.444A4.464,4.464,0,0,1,408.33-1051,8.5,8.5,0,0,1,405.3-1050.534Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    <path id="Path_203432" data-name="Path 203432" d="M412.259-1050.855v-1.347h.256a3.991,3.991,0,0,0,1.861-.4q.77-.4.769-1.908V-1071.7q0-1.412-.785-1.8a4.159,4.159,0,0,0-1.845-.384h-.256v-1.348h5.9v12.382q0,.448-.015,1.122c-.012.45-.027.9-.049,1.347s-.042.974-.064,1.572l4.01-4.394a13.007,13.007,0,0,0,1.4-1.78,2.218,2.218,0,0,0,.369-1.075.5.5,0,0,0-.385-.529,4.578,4.578,0,0,0-1.187-.113v-1.347h7.089v1.347a3.722,3.722,0,0,0-2.181.786,14.843,14.843,0,0,0-2.342,2.2l-2.245,2.534,4.266,6.351a8.592,8.592,0,0,0,1.652,1.956,2.914,2.914,0,0,0,1.909.674h.1v1.347h-.449a23.007,23.007,0,0,1-2.326-.1,4.619,4.619,0,0,1-1.539-.4,3.915,3.915,0,0,1-1.187-.93,13.059,13.059,0,0,1-1.235-1.684L420.534-1059l-2.374,1.764v2.887q0,1.411.786,1.78a4.3,4.3,0,0,0,1.845.369h.1v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                </g>
+                            </svg>
+                        </a>
+
+                    </h1>
+                </div>
+                <div class="col-lg-6 col-8">
+                    <div class="header-mobile">
+                        <div class="logo logo-mobile d-block d-sm-none">
+                            <a href="/">
+                                <svg id="Logo_-_wordmark" data-name="Logo - wordmark" xmlns="http://www.w3.org/2000/svg" width="138.172" height="24.778" viewBox="0 0 138.172 24.778">
+                                    <g id="Group_14508" data-name="Group 14508" transform="translate(-301.15 -25.375)">
+                                        <text id="_" data-name="™" transform="translate(430.322 36.375)" fill="currentcolor" font-size="10" font-family="NotoSerif, Noto Serif"><tspan x="0" y="0">™</tspan></text>
+                                        <path id="Path_203423" data-name="Path 203423" d="M389.719-1068.06a3.336,3.336,0,0,0,1.6.275,12.7,12.7,0,0,0,1.7-.358,2.787,2.787,0,0,1,1.713.066,2.054,2.054,0,0,0-1.088.477,6.691,6.691,0,0,1-.982.7,2.74,2.74,0,0,1-2.4-.1" transform="translate(0 1100.688)" fill="currentcolor" fill-rule="evenodd" />
+                                        <path id="Path_203424" data-name="Path 203424" d="M384.8-1068.06a3.34,3.34,0,0,1-1.6.275,12.685,12.685,0,0,1-1.7-.358,2.784,2.784,0,0,0-1.712.066,2.061,2.061,0,0,1,1.088.477,6.627,6.627,0,0,0,.981.7,2.74,2.74,0,0,0,2.4-.1" transform="translate(0 1100.688)" fill="currentcolor" fill-rule="evenodd" />
+                                        <path id="Path_203425" data-name="Path 203425" d="M307.533-1050.534a7.694,7.694,0,0,1-4.764-1.251,3.94,3.94,0,0,1-1.619-3.272,2.075,2.075,0,0,1,.609-1.556,2.335,2.335,0,0,1,1.7-.593,7.913,7.913,0,0,0,.513,2.5,4.276,4.276,0,0,0,1.379,1.876,3.861,3.861,0,0,0,2.438.722,5.015,5.015,0,0,0,3.368-1.043,3.728,3.728,0,0,0,1.219-3,4,4,0,0,0-.465-2.005,4.659,4.659,0,0,0-1.54-1.523,17.62,17.62,0,0,0-2.967-1.476,12.036,12.036,0,0,1-4.443-2.839,6.153,6.153,0,0,1-1.459-4.282,5.3,5.3,0,0,1,.914-3.127,5.8,5.8,0,0,1,2.5-1.989,8.972,8.972,0,0,1,3.609-.69,7.7,7.7,0,0,1,4.426,1.09,3.074,3.074,0,0,1,1.572,2.5,1.839,1.839,0,0,1-.69,1.555,2.95,2.95,0,0,1-1.844.529,5.626,5.626,0,0,0-.336-1.924,3.375,3.375,0,0,0-1.123-1.54,3.4,3.4,0,0,0-2.134-.609,3.979,3.979,0,0,0-2.887.994,3.538,3.538,0,0,0-1.025,2.663,4.6,4.6,0,0,0,.464,2.165,4.274,4.274,0,0,0,1.556,1.572,19.886,19.886,0,0,0,2.951,1.459,13.93,13.93,0,0,1,4.395,2.662,5.262,5.262,0,0,1,1.571,3.977,5.729,5.729,0,0,1-2.133,4.748A8.98,8.98,0,0,1,307.533-1050.534Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                        <path id="Path_203426" data-name="Path 203426" d="M317.316-1050.855v-1.347h.256a3.991,3.991,0,0,0,1.861-.4q.77-.4.769-1.908V-1071.7q0-1.412-.785-1.8a4.159,4.159,0,0,0-1.845-.384h-.256v-1.348h5.9v7.057q0,.578-.032,1.219t-.1,1.508h.16a4.9,4.9,0,0,1,4.716-2.92,5.641,5.641,0,0,1,4.218,1.492q1.459,1.491,1.46,4.795v7.571q0,1.508.689,1.908a3.514,3.514,0,0,0,1.78.4h.1v1.347h-5.581v-11.066a5.713,5.713,0,0,0-.786-3.24,3.078,3.078,0,0,0-2.742-1.155,3.284,3.284,0,0,0-2.935,1.412,6.7,6.7,0,0,0-.947,3.785v6.768q0,1.411.786,1.78a4.3,4.3,0,0,0,1.845.369h.1v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                        <path id="Path_203427" data-name="Path 203427" d="M345.991-1050.534a6.809,6.809,0,0,1-5.469-2.309,9.679,9.679,0,0,1-1.973-6.48q0-4.491,1.845-6.768a6.4,6.4,0,0,1,5.277-2.278,6.336,6.336,0,0,1,4.891,1.925q1.78,1.924,1.78,5.742v1.475H341.661a8.773,8.773,0,0,0,1.266,5.085,4.138,4.138,0,0,0,3.513,1.587,5.488,5.488,0,0,0,2.838-.69,5.238,5.238,0,0,0,1.749-1.555,1,1,0,0,1,.417.385,1.245,1.245,0,0,1,.192.705,2.229,2.229,0,0,1-.609,1.379,4.762,4.762,0,0,1-1.877,1.268A8.227,8.227,0,0,1,345.991-1050.534Zm-4.266-10.425H349.1a9.223,9.223,0,0,0-.786-4.106,2.784,2.784,0,0,0-2.711-1.572,3.121,3.121,0,0,0-2.743,1.46A8.491,8.491,0,0,0,341.725-1060.959Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                        <path id="Path_203428" data-name="Path 203428" d="M354.683-1050.855v-1.347h.1a3.994,3.994,0,0,0,1.861-.4q.77-.4.77-1.908v-10.008q0-1.411-.786-1.8a4.162,4.162,0,0,0-1.845-.385h-.1v-1.347h4.94l.61,3.176h.16a13.967,13.967,0,0,1,.9-1.748,3.73,3.73,0,0,1,1.283-1.267,4.3,4.3,0,0,1,2.213-.482,4.521,4.521,0,0,1,2.615.61,2.007,2.007,0,0,1,.85,1.733,2.137,2.137,0,0,1-.69,1.635,3.323,3.323,0,0,1-2.294.641,3.625,3.625,0,0,0-.384-1.908,1.448,1.448,0,0,0-1.316-.593,1.913,1.913,0,0,0-1.507.7,5.126,5.126,0,0,0-.963,1.8,13.182,13.182,0,0,0-.513,2.262,15.63,15.63,0,0,0-.16,2.1v5.036q0,1.411.786,1.78a4.293,4.293,0,0,0,1.844.369h.9v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                        <path id="Path_203429" data-name="Path 203429" d="M368.829-1050.855v-1.347h.417a3.989,3.989,0,0,0,1.86-.4q.771-.4.77-1.908V-1071.7q0-1.412-.786-1.8a4.154,4.154,0,0,0-1.844-.384h-.417v-1.348h6.062v20.722q0,1.508.77,1.908a3.991,3.991,0,0,0,1.861.4h.417v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                        <path id="Path_203430" data-name="Path 203430" d="M387.24-1050.534a6.96,6.96,0,0,1-5.453-2.213q-1.989-2.214-1.989-6.736,0-4.491,1.909-6.688a7.054,7.054,0,0,1,5.629-2.2,6.989,6.989,0,0,1,5.453,2.2q1.989,2.2,1.989,6.688,0,4.523-1.925,6.736A7.038,7.038,0,0,1,387.24-1050.534Zm.064-1.668a3.506,3.506,0,0,0,3.384-1.844,11.925,11.925,0,0,0,.979-5.437,11.444,11.444,0,0,0-.995-5.389,3.564,3.564,0,0,0-3.4-1.8,3.528,3.528,0,0,0-3.384,1.8,11.6,11.6,0,0,0-.978,5.389,11.756,11.756,0,0,0,.994,5.437A3.541,3.541,0,0,0,387.3-1052.2Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                        <path id="Path_203431" data-name="Path 203431" d="M405.3-1050.534a7.744,7.744,0,0,1-3.785-.9,6.213,6.213,0,0,1-2.582-2.839,11.654,11.654,0,0,1-.946-5.084,12.7,12.7,0,0,1,.946-5.405,5.791,5.791,0,0,1,2.55-2.791,7.94,7.94,0,0,1,3.657-.818,9.927,9.927,0,0,1,2.63.353,5.25,5.25,0,0,1,2.117,1.091,2.344,2.344,0,0,1,.834,1.828,1.708,1.708,0,0,1-.722,1.556,3.971,3.971,0,0,1-2.133.465,5.613,5.613,0,0,0-.561-2.6,2.2,2.2,0,0,0-2.165-1.091,3.627,3.627,0,0,0-2.134.642,4.126,4.126,0,0,0-1.411,2.245,15.845,15.845,0,0,0-.5,4.491,9.144,9.144,0,0,0,1.139,5.084,4.147,4.147,0,0,0,3.7,1.684,5.23,5.23,0,0,0,2.615-.626,4.159,4.159,0,0,0,1.651-1.619,1.53,1.53,0,0,1,.546,1.25,2.2,2.2,0,0,1-.61,1.444A4.464,4.464,0,0,1,408.33-1051,8.5,8.5,0,0,1,405.3-1050.534Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                        <path id="Path_203432" data-name="Path 203432" d="M412.259-1050.855v-1.347h.256a3.991,3.991,0,0,0,1.861-.4q.77-.4.769-1.908V-1071.7q0-1.412-.785-1.8a4.159,4.159,0,0,0-1.845-.384h-.256v-1.348h5.9v12.382q0,.448-.015,1.122c-.012.45-.027.9-.049,1.347s-.042.974-.064,1.572l4.01-4.394a13.007,13.007,0,0,0,1.4-1.78,2.218,2.218,0,0,0,.369-1.075.5.5,0,0,0-.385-.529,4.578,4.578,0,0,0-1.187-.113v-1.347h7.089v1.347a3.722,3.722,0,0,0-2.181.786,14.843,14.843,0,0,0-2.342,2.2l-2.245,2.534,4.266,6.351a8.592,8.592,0,0,0,1.652,1.956,2.914,2.914,0,0,0,1.909.674h.1v1.347h-.449a23.007,23.007,0,0,1-2.326-.1,4.619,4.619,0,0,1-1.539-.4,3.915,3.915,0,0,1-1.187-.93,13.059,13.059,0,0,1-1.235-1.684L420.534-1059l-2.374,1.764v2.887q0,1.411.786,1.78a4.3,4.3,0,0,0,1.845.369h.1v1.347Z" transform="translate(0 1100.688)" fill="currentcolor" />
+                                    </g>
+                                </svg>
+                            </a>
+
+                        </div>
+                        <button type="button" class="close-button " aria-label="Close menu">
+                        </button>
+                        <div class="mobile-menu">
+
+                            <ul>
+                                <li><a href="/Act-now.html"><span><img src="images/Act-now-menu-icon.svg" /></span>Act now</a></li>
+                                <li><a href="/How-sherlock-works.html"><span><img src="images/How-Sherlock-works-menu-icon.svg" /></span>How Sherlock Works</a></li>
+                                <li><a href="/About-us.html"><span><img src="images/About-us-menu-icon.svg" /></span>About us</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="mobile-footer d-block d-sm-none">
+                            <div class="footer-inner">
+                                <ul>
+                                    <li><a href="/Terms%20of%20services.html">Terms of service</a></li>
+                                    <li>|</li>
+                                    <li><a href="/privacypolicy.html">Privacy policy</a>
+                                    <li>|</li>
+                                    <li><a href="/FAQ.html">FAQ</a>
+                                </ul>
+                                <p>© XCalibrate Global Solutions Inc. 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="menu justify-content-end">
+                        <li>
+                            <a href="https://www.linkedin.com/company/xcalibrateglobal/mycompany/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 52.964 52.964">
+                                    <g id="linkedin_icon" data-name="linkedin icon" transform="translate(1.101 1.101)">
+                                        <circle id="Ellipse_375" data-name="Ellipse 375" cx="25.381" cy="25.381" r="25.381" fill="none" stroke="currentcolor" stroke-miterlimit="10" stroke-width="2.202" />
+                                        <path id="Path_203422" data-name="Path 203422" d="M1310.1-1048.311h-5.561V-1065.6h5.561Zm-2.588-19.92h-.041a2.854,2.854,0,0,1-2.932-2.983,2.872,2.872,0,0,1,3-2.983,2.865,2.865,0,0,1,2.973,2.983A2.872,2.872,0,0,1,1307.512-1068.231Zm22.913,19.92h-5.562v-9.454c0-2.265-.808-3.812-2.821-3.812a3.041,3.041,0,0,0-2.851,2.052,3.737,3.737,0,0,0-.192,1.365v9.849h-5.562V-1065.6H1319v2.407a5.629,5.629,0,0,1,5.015-2.811c3.65,0,6.411,2.406,6.411,7.594Z" transform="translate(-1291 1086.045)" fill="currentcolor" />
+                                    </g>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="betabutton"><a href="/Act-now.html" class="">Get Sherlock Beta</a></li>
+                        <li>
+                            <a href="#" class="menubutton">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 52.202 52.202">
+                                    <g id="Chatbot_menu" data-name="Chatbot menu" transform="translate(1.101 1.101)">
+                                        <g id="Group_12554" data-name="Group 12554" transform="translate(-1567.154 1085.283)">
+                                            <path id="Path_143496" data-name="Path 143496" d="M1581.1-1059.927a2.6,2.6,0,0,1,2.6-2.6,2.6,2.6,0,0,1,2.6,2.6,2.6,2.6,0,0,1-2.6,2.6,2.6,2.6,0,0,1-2.6-2.6h0" fill="currentcolor" stroke="currentcolor" stroke-miterlimit="10" stroke-width="1" />
+                                            <path id="Path_143497" data-name="Path 143497" d="M1589.266-1059.927a2.6,2.6,0,0,1,2.6-2.6,2.6,2.6,0,0,1,2.6,2.6,2.6,2.6,0,0,1-2.6,2.6,2.6,2.6,0,0,1-2.6-2.6h0" fill="currentcolor" stroke="currentcolor" stroke-miterlimit="10" stroke-width="1" />
+                                            <path id="Path_143498" data-name="Path 143498" d="M1597.429-1059.927a2.6,2.6,0,0,1,2.6-2.6,2.6,2.6,0,0,1,2.6,2.6,2.6,2.6,0,0,1-2.6,2.6,2.6,2.6,0,0,1-2.6-2.6h0" fill="currentcolor" stroke="currentcolor" stroke-miterlimit="10" stroke-width="1" />
+                                        </g>
+                                        <circle id="Ellipse_276" data-name="Ellipse 276" cx="25" cy="25" r="25" fill="none" stroke="currentcolor" stroke-miterlimit="10" stroke-width="2.202" />
+                                    </g>
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="aboutpage">
+        <div class="container">
+            <section>
+                <div class="SherlockBox innerpage sherockworks">
+                    <div class="row">
+                        <div class="offset-lg-5 col-lg-7 offset-2 col-10">
+                            <div class="owlimage">
+                                <img src="images/owl-icon-Coral.svg" class="img-fluid" />
+
+                            </div>
+                            <div class="row justify-content-center">
+
+                                <div class="col-lg-11 abouttitlebatch">
+                                    <div class="row">
+                                        <div class="col-md-11 col-12">
+                                            <h2>How Sherlock works</h2>
+                                            <h3>
+                                                Sherlock is a 24*7 AI powered
+                                                coaching platform in preventive
+                                                space enabling employees to get
+                                                unstuck, think beyond their current
+                                                habitual thinking & surge ahead.
+                                            </h3>
+                                            <div class="Textpannel">
+                                                <p>
+                                                    It works on core principles of Coaching, AI & Technology
+                                                </p>
+
+                                                <div class="surgebutton">
+                                                    <a href="/Act-now.html">SURGE AHEAD</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="SherlockBox innerpage Technique">
+                    <div class="row">
+                        <div class="col-lg-5 d-flex justify-content-end align-items-center flex-column order-md-1 order-2">
+                            <div class="mmt">
+                                <img src="images/Thought-provoking-pic.png" class="img-fluid" />
+                            </div>
+                            <div>
+                                <img src="images/bubble-with-text.svg" width="280" class="img-fluid" />
+                            </div>
+                        </div>
+                        <div class="offset-lg-0 col-lg-7 offset-2 col-10 offset-1 order-md-2 order-1">
+
+                            <div class="row justify-content-center">
+
+                                <div class="col-lg-11 abouttitlebatch">
+
+                                    <div class="Textpannel">
+                                        <p>
+                                            <b>Thought provoking questioning techniques</b><br />
+                                            Sherlock leverages targeted & thought-provoking questioning techniques to stimulate user’s self-reflection, making possible action visible again and promoting solution-oriented thinking.
+                                        </p>
+
+                                        <div class="quote">
+                                            <h4>
+                                                The conversation with Sherlock was thought provoking. It pushed me to introspect the possible cause, led me to a different way of thinking and also gave me potential solutions
+                                            </h4>
+                                            <p class="author">-A GenZ Sherlock user</p>
+                                        </div>
+                                        <p>
+                                            <b>Multi-disciplinary approach to Coaching</b><br />
+                                            The science of coaching is based on multi-disciplinary approach of Columbia university coaching process, Whole Brain Thinking, Cognitive Positive Psychology, Neurolinguistic programming (NLP) & Neuroscience.
+                                        </p>
+                                        <p>Sherlock leverages an instrument called NBI (Neethling Brain Instrument) for Whole Brain Thinking. NBI is based on 30 years of international research. Through its unique coaching style, Sherlock enables the employees to transition from their preferred thinking style to leverage whole brain for thinking.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="SherlockBox innerpage Technology">
+                    <div class="row">
+                        <div class="offset-lg-5 col-lg-7 offset-2 col-10">
+
+                            <div class="row justify-content-center">
+
+                                <div class="col-lg-11 abouttitlebatch">
+
+                                    <div class="Textpannel">
+                                        <p>
+                                            <b>Technology</b><br />
+                                            Sherlock coaching platform is purpose built for coaching conversations, using state of the art AI neural network models like GPT-3, together with very customised neural network models evolved from hundreds or thousands of coaching conversations with some of the best coaches. The conversation model is trained according to the user's brain preference, which makes it extremely  personal. For the Business managers and HR partners, our analytics app i.e. Sherlock Acumen™ leverages the power of data and brings unique insights using specialized proprietary algorithms.
+                                        </p>
+
+                                        <p class="video"><a href="" data-toggle="modal" data-target="#myModal">Who is Sherlock? <img src="images/video-icon.svg" width="40" class="img-fluid" /></a></p>
+                                        <div class="quote">
+                                            <h4>
+                                                Have been using some AI based apps and they sound robotic, but Sherlock had human touch in it and loved it
+                                            </h4>
+                                            <p class="author">-A millennial first time manager, a large MNC</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="icons">
+                <div class="col-md-12">
+
+                    <ul>
+                        <li><a href="/#Today"><div class="iconimage"><img src="images/Today.svg" /></div><div class="image-hover"><img src="images/Today-selection.svg" /></div><span>Today</span></a></li>
+                        <li><a href="/#coached"><div class="iconimage"><img src="images/Get-Coached.svg" /></div><div class="image-hover"><img src="images/Get-Coached-selection.svg" /></div><span>Get Coached</span></a></li>
+                        <li><a href="/#chat"><div class="iconimage"><img src="images/Chat-now.svg" /></div><div class="image-hover"><img src="images/Chat-now-selection.svg" /></div><span>Chat now</span></a></li>
+                        <li><a href="/#analyse"><div class="iconimage"><img src="images/Analyse-now.svg" /></div><div class="image-hover"><img src="images/Analyse-now-selection.svg" /></div><span>Analyse now</span></a></li>
+                        <li><a href="/#Act"><div class="iconimage"><img src="images/Act-now.svg" /></div><div class="image-hover"><img src="images/Act-now-selection.svg" /></div><span>Act now</span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <footer>
+                <div class="footer-inner">
+                    <ul>
+                        <li><a href="/Terms%20of%20services.html">Terms of service</a></li>
+                        <li>|</li>
+                        <li><a href="/privacypolicy.html">Privacy policy</a>
+                        <li>|</li>
+                        <li><a href="/FAQ.html">FAQ</a>
+                    </ul>
+                    <p>© XCalibrate Global Solutions Inc. 2022</p>
+                </div>
+            </footer>
+        </div>
+
+
+    </main>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FHPsYtv-uRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Modal footer -->
+
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+</html>
